@@ -1,0 +1,35 @@
+- defaultTab: summary
+  description: ''
+  executionEnabled: true
+  group: run
+  id: d06942ec-e1e8-48d1-a3e0-c985b91739b3
+  loglevel: INFO
+  name: Run
+  nodeFilterEditable: false
+  nodefilters:
+    dispatch:
+      excludePrecedence: true
+      keepgoing: false
+      rankOrder: ascending
+      successOnEmptyNodeFilter: false
+      threadcount: '1'
+    filter: 'tags: web'
+  nodesSelectedByDefault: true
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - description: git pull
+      jobref:
+        group: setup
+        name: git pull
+    - configuration:
+        fail: 'true'
+        halt: 'false'
+        status: Git pull failed
+      nodeStep: false
+      type: flow-control
+    - jobref:
+        group: ansible
+        name: AnsiblePlaybookTest
+    keepgoing: false
+    strategy: node-first

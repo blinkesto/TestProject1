@@ -12,7 +12,3 @@
     - exec: echo "git pull"
     keepgoing: false
     strategy: node-first
-  uuid: a92a11d2-8f1f-4db8-8e8d-aca617dcd418
-
-
-

@@ -1,0 +1,32 @@
+- defaultTab: summary
+  description: Execute an ansible playbook.  Version 1.
+  executionEnabled: true
+  group: ansible
+  id: b4fc16a2-a5cb-4094-95ca-92beeac79fb3
+  loglevel: INFO
+  name: AnsiblePlaybookTest
+  nodeFilterEditable: false
+  nodefilters:
+    dispatch:
+      excludePrecedence: true
+      keepgoing: false
+      rankOrder: ascending
+      successOnEmptyNodeFilter: false
+      threadcount: '1'
+    filter: 'tags: web'
+  nodesSelectedByDefault: true
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - configuration:
+        ansible-base-dir-path: /var/lib/rundeck/ansible
+        ansible-become: 'true'
+        ansible-become-method: sudo
+        ansible-playbook: /var/lib/rundeck/ansible/test.yml
+        ansible-ssh-auth-type: privateKey
+        ansible-ssh-keypath: /var/lib/rundeck/.ssh/id_rsa
+        ansible-ssh-user: ec2-user
+      nodeStep: true
+      type: com.batix.rundeck.plugins.AnsiblePlaybookWorflowNodeStep
+    keepgoing: false
+    strategy: node-first
