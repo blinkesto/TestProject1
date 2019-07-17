@@ -12,7 +12,7 @@
       rankOrder: ascending
       successOnEmptyNodeFilter: false
       threadcount: '1'
-    filter: 'name: ip-172-31-25-175.us-east-2.compute.internal'
+    filter: 'tags: web'
   nodesSelectedByDefault: true
   scheduleEnabled: true
   sequence:
