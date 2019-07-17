@@ -57,7 +57,7 @@ java -jar rundeck-cli-1.1.7-all.jar jobs list -p AnsibleTest --file AnsibleTestJ
 java -jar rundeck-cli-1.1.7-all.jar jobs load -p AnsibleTest --duplicate update --file AnsibleTestJobs.yml  --format yaml
 
 # Invoke import-jobs action from cli (DOES NOT WORK - https://github.com/rundeck/rundeck/issues/5064)
-java -jar  bin/rundeck-cli-1.1.7-all.jar projects scm  perform --integration import --action import-jobs --project TestProject1
+java -jar  bin/rundeck-cli-1.1.7-all.jar projects scm  perform --integration import --action import-jobs --allitems --project TestProject1 
 
 
 # SCM is setup to automatically import (DOES NOT WORK - https://github.com/rundeck/rundeck/issues/4331)

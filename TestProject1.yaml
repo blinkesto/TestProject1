@@ -1,5 +1,5 @@
 - defaultTab: summary
-  description: Execute an ansible playbook
+  description: Execute an ansible playbook.  Version 1.
   executionEnabled: true
   id: 56f4fb02-2c85-4145-bd1d-b745bdfb3136
   loglevel: INFO
