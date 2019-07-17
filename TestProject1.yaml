@@ -29,5 +29,4 @@
       type: com.batix.rundeck.plugins.AnsiblePlaybookWorflowNodeStep
     keepgoing: false
     strategy: node-first
-  uuid: 56f4fb02-2c85-4145-bd1d-b745bdfb3136
 
