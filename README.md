@@ -45,7 +45,8 @@ java -jar rundeck-cli-1.1.7-all.jar projects delete --confirm --project AnsibleT
 
 ### Export 
 ```bash
-java -jar rundeck-cli-1.1.7-all.jar jobs list -p AnsibleTest --file AnsibleTestJobs.yml --format yaml
+ java -jar bin/rundeck-cli-1.1.7-all.jar jobs list  -p TestProject1 --file run_test.yaml --format yaml --jobxact Run
+
 ```
 
 

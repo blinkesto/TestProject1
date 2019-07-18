@@ -1,7 +1,7 @@
 - defaultTab: summary
   description: ''
   executionEnabled: true
-  id: d06942ec-e1e8-48d1-a3e0-c985b91739b3
+  id: 52681c29-3cd9-4fce-b94f-65abba06aabd
   loglevel: INFO
   name: Run
   nodeFilterEditable: false
@@ -32,3 +32,4 @@
         name: AnsiblePlaybookTest
     keepgoing: false
     strategy: node-first
+  uuid: 52681c29-3cd9-4fce-b94f-65abba06aabd
