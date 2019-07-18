@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Script to pull ansible role changes
+
 cd /var/lib/rundeck/ansible/roles/apache
 git pull
 
