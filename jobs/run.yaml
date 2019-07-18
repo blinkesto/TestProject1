@@ -4,7 +4,6 @@
   group: run
   id: d06942ec-e1e8-48d1-a3e0-c985b91739b3
   loglevel: INFO
-  name: Run
   nodeFilterEditable: false
   nodefilters:
     dispatch:
