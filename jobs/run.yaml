@@ -3,7 +3,7 @@
   executionEnabled: true
   id: 52681c29-3cd9-4fce-b94f-65abba06aabd
   loglevel: INFO
-  name: Run
+  name: run
   nodeFilterEditable: false
   nodefilters:
     dispatch:
