@@ -9,9 +9,7 @@
   scheduleEnabled: true
   sequence:
     commands:
-    - description: Pull
-      script: "#!/bin/sh\n\ncd /var/lib/rundeck/ansible/roles/apache\ngit pull\n\n\
-        # This would not be done IRL, you can make a subproject of the playbooks dir\
-        \ \ncd /var/lib/rundeck/ansible/playbooks/TestProject1\ngit pull"
+    - scriptfile: /var/rundeck/projects/TestProject1/scm/scripts/gitpull.sh
     keepgoing: false
     strategy: node-first
+  uuid: a92a11d2-8f1f-4db8-8e8d-aca617dcd418
