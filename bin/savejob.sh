@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Downloads a job and pushes it to git
+
 if echo "$PWD" | grep -q "/bin$"; then
   cd ..
   PROJECT_PATH=$PWD
