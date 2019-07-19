@@ -32,4 +32,3 @@
         name: AnsiblePlaybookTest
     keepgoing: false
     strategy: node-first
-  uuid: 445c1bd9-d644-4494-b9ec-88f90019cea6
