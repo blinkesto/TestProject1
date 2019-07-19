@@ -2,7 +2,6 @@
   description: ''
   executionEnabled: true
   group: setup
-  id: a92a11d2-8f1f-4db8-8e8d-aca617dcd418
   loglevel: INFO
   name: git pull
   nodeFilterEditable: false
