@@ -17,6 +17,8 @@ java -jar bin/rundeck-cli-1.1.7-all.jar projects create -p TestProject2 --file p
 # Setup SCM
 java -jar bin/rundeck-cli-1.1.7-all.jar projects scm setup --integration import --project TestProject2 --file TestProject1SCM.json --type git-import
 
+# Import jobs from git
+java -jar bin/rundeck-cli-1.1.7-all.jar projects scm perform --integration import --action import-jobs --allitems --project TestProject2
 
 
 ```

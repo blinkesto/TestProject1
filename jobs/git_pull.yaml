@@ -8,6 +8,6 @@
   scheduleEnabled: true
   sequence:
     commands:
-    - scriptfile: /var/rundeck/projects/TestProject1/scm/scripts/gitpull.sh
+    - scriptfile: /var/rundeck/projects/TestProject2/scm/scripts/gitpull.sh
     keepgoing: false
     strategy: node-first
