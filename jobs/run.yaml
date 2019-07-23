@@ -1,7 +1,7 @@
 - defaultTab: summary
   description: ''
   executionEnabled: true
-  id: 52681c29-3cd9-4fce-b94f-65abba06aabd
+  id: 6be2c75d-7b4a-4493-b8a6-7f28808f39a0
   loglevel: INFO
   name: run
   nodeFilterEditable: false
@@ -21,6 +21,11 @@
       jobref:
         group: setup
         name: git pull
+    - description: molecule
+      jobref:
+        group: test
+        name: molecule
+        uuid: dcc48862-87c2-4f69-b8de-df107de02d95
     - configuration:
         fail: 'true'
         halt: 'false'
