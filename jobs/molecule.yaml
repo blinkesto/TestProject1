@@ -1,0 +1,16 @@
+- defaultTab: summary
+  description: ''
+  executionEnabled: true
+  group: test
+  id: dcc48862-87c2-4f69-b8de-df107de02d95
+  loglevel: INFO
+  name: molecule
+  nodeFilterEditable: false
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - script: |-
+        cd /var/lib/rundeck/ansible/roles/apache
+         /var/lib/rundeck/.local/bin/molecule converge
+    keepgoing: false
+    strategy: node-first
